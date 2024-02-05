@@ -1,6 +1,8 @@
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
+import ubication from "../../../public/images/santiago.webp";
+import face from "../../../public/images/me.webp";
 import Avatar from "/public/images/memoji.webp";
 import Footer from "../Footer/Footer";
 import Nav from "../Navbar/Nav";
@@ -22,7 +24,7 @@ const Home = () => {
 						<div className="shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
 							<img
 								className="absolute h-full object-contain right-[4.2rem] top-28 scale-x-[1.55]  scale-150 overflow-hidden"
-								src="../../../public/images/me.webp"
+								src={face}
 								title="Imagen usuario"
 								alt="Imagen usuario"
 							/>
@@ -111,7 +113,7 @@ const Home = () => {
 						{/* BLOQUE UBICACION MAPA */}
 						<div className="shadow-md row-span-1 col-span-3 rounded-3xl bg-white dark:bg-raisin-black overflow-hidden border-2 border-transparent xl:col-span-1 flex items-center justify-center relative">
 							<img
-								src="/public/images/santiago.webp"
+								src={ubication}
 								className="absolute w-full object-center scale-[1.3] z-[1] xs:scale-[1.9] right-2"
 								// sm:-top-64
 								title="Ubicacion donde radica el Desarrollador"

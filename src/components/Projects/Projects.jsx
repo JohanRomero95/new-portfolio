@@ -32,11 +32,11 @@ const ProjectsComponent = () => {
 				},
 				468: {
 					spaceBetween: 10,
-					slidesPerView: 1,
+					slidesPerView: 2,
 				},
 				768: {
 					spaceBetween: 20,
-					slidesPerView: 2,
+					slidesPerView: 3,
 				},
 				1024: {
 					spaceBetween: 15,
@@ -74,7 +74,7 @@ const ProjectsComponent = () => {
 							{project.position_name}
 						</h1>
 					</div>
-					<div className="flex gap-5 ">
+					<div className="flex gap-5 xs:gap-2">
 						{project.url_site ? (
 							<a
 								href={project.url_site}

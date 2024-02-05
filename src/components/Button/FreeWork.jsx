@@ -3,7 +3,7 @@ import { FaCheck } from "react-icons/fa";
 import { MdOutlineMoodBad } from "react-icons/md";
 
 const Button = () => {
-	const [disponible, setDisponible] = useState(false);
+	const [disponible, setDisponible] = useState(true);
 
 	const handleCambio = () => {
 		setDisponible(!disponible);
