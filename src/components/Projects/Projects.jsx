@@ -18,7 +18,7 @@ const ProjectsComponent = () => {
 	return (
 		<Swiper
 			modules={[A11y, Navigation, Mousewheel]}
-			className="breakpoint w-full grid auto-rows-[500px] grid-cols-8 gap-4 "
+			className="breakpoint w-full min-h-[545px] -mb-8 grid auto-rows-[500px] grid-cols-8 gap-4 "
 			loop={true}
 			centeredSlides={false}
 			grabCursor={true}
