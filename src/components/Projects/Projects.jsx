@@ -57,7 +57,7 @@ const ProjectsComponent = () => {
 							alt={project.name}
 							title={project.name}
 							className={`w-48 h-10 z-[1]  ${
-								project.name === "Hunddle"
+								project.name === "Huddle"
 									? "invert hue-rotate-180 w-[11rem] mb-3 h-[28px]"
 									: ""
 							} ${
@@ -70,8 +70,8 @@ const ProjectsComponent = () => {
 						<h1
 							className="text-center text-moonlit leading-5 mt-2 z-[1]"
 							alt={project.name}
-							title={project.position_name}>
-							{project.position_name}
+							title={project.type}>
+							{project.type}
 						</h1>
 					</div>
 					<div className="flex gap-5 xs:gap-2">
@@ -82,7 +82,7 @@ const ProjectsComponent = () => {
 								title={`Ir a ${project.name}`}
 								alt={`Ir a ${project.name}`}
 								className="shadow-md flex items-center justify-center gap-2 px-4 py-2 bg-[#0568fe] text-white rounded-xl text-sm z-[1] hover:scale-[1.1] transition-all">
-								Preview
+								Visualizar
 								<span>
 									<FaExternalLinkAlt className="opacity-70" />
 								</span>
@@ -94,10 +94,10 @@ const ProjectsComponent = () => {
 						<a
 							href={project.url_code}
 							target="_blank"
-							title={`Ir al codigo de ${project.name}`}
-							alt={`Ir al codigo de ${project.name}`}
+							title={`Ir al código de ${project.name}`}
+							alt={`Ir al código de ${project.name}`}
 							className="shadow-md flex items-center justify-center gap-2 px-4 py-2 bg-[#0568fe] text-white rounded-xl text-sm z-[1] hover:scale-[1.1] transition-all">
-							Code
+							Código
 							<span>
 								<FaCode className="text-lg opacity-70" />
 							</span>

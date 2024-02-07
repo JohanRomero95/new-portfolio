@@ -53,7 +53,7 @@ const Header = () => {
 					<button
 						onClick={scrollToTop}
 						title="Logotipo del desarrollador"
-						alt="Logo del desarrollador y boton subir a top pagina"
+						alt="Logo del desarrollador y botón subir a top pagina"
 						className="text-moonlit text-md font-semibold dark:text-dusky">
 						JR
 					</button>
@@ -65,7 +65,7 @@ const Header = () => {
 					<button
 						className="text-2xl animate__animated animate__fadeInDown transition-all"
 						onClick={handleChangeTheme}
-						title="Boton para cambiar modo"
+						title="Botón para cambiar modo"
 						alt="Modo oscuro o claro">
 						{theme === "dark" ? <IoSunny className="text-orange-400  " /> : <MdDarkMode />}
 					</button>
@@ -74,7 +74,7 @@ const Header = () => {
 						href="#"
 						target="_blank"
 						title="CV del Desarrollador"
-						alt="Boton para descargar o visualizar CV del Desarrollador"
+						alt="Botón para descargar o visualizar CV del Desarrollador"
 						className="shadow-md w-auto h-7 px-4 font-medium flex items-center gap-2 bg-dusky text-moonlit rounded-3xl dark:text-dusky dark:bg-moonlit lg:h-10 lg:px-6 cursor-pointer hover:scale-[1.1] transition-all duration-300">
 						<VscCloudDownload className="text-xl " />
 						<span className="xxs:hidden">Download</span> CV

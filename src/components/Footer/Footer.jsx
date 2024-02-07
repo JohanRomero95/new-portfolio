@@ -12,16 +12,16 @@ const Footer = () => {
 					</p>
 					<h3
 						className="items-center gap-2 hidden lg:flex"
-						alt="Tecnologias con las que se trabajo la pagina"
-						title="Tecnologias usadas">
+						alt="Tecnologías con las que se trabajo la pagina"
+						title="Tecnologías usadas">
 						Hecho con React & Tailwind
 					</h3>
 				</div>
 				<div className="flex flex-col-reverse gap-3 items-end">
 					<p
 						className="opacity-50 hidden lg:flex"
-						title="Ultima actualizacion"
-						alt="Ultima actualizacion">
+						title="Ultima actualización"
+						alt="Ultima actualización">
 						Ultima actualización: 31 enero de 2024
 					</p>
 					<div className="flex items-center gap-2 text-xl ">
@@ -36,8 +36,8 @@ const Footer = () => {
 							className="flex items-center font-medium hover:scale-[1.2] transition-transform duration-300 hover:text-blue-500"
 							target="_blank"
 							href="https://www.linkedin.com/in/JohanRomero95"
-							title="Ir a Linkedin"
-							alt="Ir a Linkedin">
+							title="Ir a LinkedIn"
+							alt="Ir a LinkedIn">
 							<FaLinkedinIn />
 						</a>
 						

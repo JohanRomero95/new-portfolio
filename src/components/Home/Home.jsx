@@ -23,7 +23,7 @@ const Home = () => {
 						{/* BLOQUE IMAGEN */}
 						<div className="shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
 							<img
-								className="absolute h-full object-contain right-[4.2rem] top-28 scale-x-[1.55]  scale-150 overflow-hidden"
+								className="absolute h-full object-contain right-4 top-6 scale-x-[1.1]  scale-105 overflow-hidden"
 								src={face}
 								title="Imagen usuario"
 								alt="Imagen usuario"
@@ -46,7 +46,7 @@ const Home = () => {
 									<a
 										href="https://github.com/JohanRomero95"
 										title="Ir a GitHub"
-										alt="Boton para acceder a GitHub"
+										alt="Botón para acceder a GitHub"
 										target="_blank"
 										className="shadow-md flex items-center font-medium bg-moonlit px-3 py-2 rounded-lg text-dusky gap-2 hover:scale-[1.1] transition-transform duration-300">
 										<FaGithub />
@@ -54,8 +54,8 @@ const Home = () => {
 									</a>
 									<a
 										href="https://www.linkedin.com/in/johanromero95"
-										title="Ir a Linkedin"
-										alt="Boton para acceder a Linkedin"
+										title="Ir a LinkedIn"
+										alt="Botón para acceder a LinkedIn"
 										target="_blank"
 										className="shadow-md flex items-center font-medium bg-moonlit px-3 py-2 rounded-lg text-dusky gap-2 hover:scale-[1.1] transition-transform duration-300">
 										<FaLinkedinIn />
@@ -64,7 +64,7 @@ const Home = () => {
 									<a
 										href="mailto:johanarm95@gmail.com"
 										title="Ir a Email"
-										alt="Boton para acceder a Email"
+										alt="Botón para acceder a Email"
 										className="shadow-md flex items-center font-medium bg-moonlit px-3 py-2 rounded-lg text-dusky gap-2 hover:scale-[1.1] transition-transform duration-300">
 										<MdOutgoingMail />
 										<p className="xxs:hidden">Email</p>
@@ -80,13 +80,13 @@ const Home = () => {
 							<p
 								className="text-2xl font-semibold pt-1"
 								title="Titulo sobre mi"
-								alt="Informacion sobre el desarrollador">
+								alt="Información sobre el desarrollador">
 								Sobre mi
 							</p>
 							<h2
 								className="text-md opacity-70 font-normal"
-								title="Descripcion del desarrollador"
-								alt="Descripcion del desarrollador">
+								title="Descripción del desarrollador"
+								alt="Descripción del desarrollador">
 								Desarrollador web con experiencia en diseño, desarrollo y mantenimiento en
 								aplicaciones front-end
 							</h2>
@@ -99,7 +99,7 @@ const Home = () => {
 								title="Tiempo de experiencia"
 								alt="Tiempo de experiencia">
 								<span>+</span>
-								<span>8</span>
+								<span>1</span>
 							</p>
 							<div className="opacity-10 absolute text-[6rem] top-[6.1rem] -right-[5px] sm:scale-150 sm:top-[4.7rem] sm:right-4">
 								{/* md:left-[19.4rem] md:scale-x-125 md:scale-y-125 md:top-5 */}
@@ -110,13 +110,13 @@ const Home = () => {
 							</p>
 						</div>
 
-						{/* BLOQUE UBICACION MAPA */}
+						{/* BLOQUE UBICACIÓN MAPA */}
 						<div className="shadow-md row-span-1 col-span-3 rounded-3xl bg-white dark:bg-raisin-black overflow-hidden border-2 border-transparent xl:col-span-1 flex items-center justify-center relative">
 							<img
 								src={ubication}
 								className="absolute w-full object-center scale-[1.3] z-[1] xs:scale-[1.9] right-2"
 								// sm:-top-64
-								title="Ubicacion donde radica el Desarrollador"
+								title="Ubicación donde radica el Desarrollador"
 								alt="El desarrollador esta ubicado en Santiago, Chile"
 							/>
 							<img
@@ -129,13 +129,13 @@ const Home = () => {
 							<div className="w-full h-7 backdrop-blur-sm absolute left-0 bottom-0 z-[2] flex items-center justify-center text-left text-opacity-70">
 								<span
 									className="text-xs font-medium dark:text-dusky"
-									title="Ubicacion donde radica el Desarrollador"
+									title="Ubicación donde radica el Desarrollador"
 									alt="El desarrollador esta ubicado en Santiago, Chile">
 									Santiago, CL
 								</span>
 								<span
 									className="text-[10px] font-medium px-1 dark:text-dusky"
-									title="Ubicacion donde radica el Desarrollador"
+									title="Ubicación donde radica el Desarrollador"
 									alt="El desarrollador esta ubicado en Santiago, Chile">
 									CHILE
 								</span>
@@ -146,7 +146,7 @@ const Home = () => {
 					<Header title="Proyectos" description="Algunos proyectos en los que he trabajado." />
 					<ProjectsComponent />
 					<Header
-						title="Tecnologias"
+						title="Tecnologías"
 						description="Estas son algunas de las tecnologías con las que he trabajado:"
 					/>
 					<Technologies />
