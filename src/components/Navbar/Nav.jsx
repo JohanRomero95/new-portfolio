@@ -63,11 +63,15 @@ const Header = () => {
 						<MdTranslate />
 					</button>
 					<button
-						className="text-2xl animate__animated animate__fadeInDown transition-all"
+						className={`text-2xl transition-all ${
+							theme === "dark"
+								? "animate__animated animate__rotateIn"
+								: "animate__animated animate__slideInDown"
+						}`}
 						onClick={handleChangeTheme}
 						title="Botón para cambiar modo"
 						alt="Modo oscuro o claro">
-						{theme === "dark" ? <IoSunny className="text-orange-400  " /> : <MdDarkMode />}
+						{theme === "dark" ? <IoSunny className="text-orange-400" /> : <MdDarkMode />}
 					</button>
 
 					<a

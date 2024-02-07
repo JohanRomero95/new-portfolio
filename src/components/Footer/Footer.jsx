@@ -5,7 +5,7 @@ const Footer = () => {
 	return (
 		<footer className="shadow-md w-full bg-white dark:bg-raisin-black h-40 flex flex-col items-start justify-center max-w-5xl px-5 xl:max-w-7xl text-base mx-auto rounded-3xl">
 			<div className=" w-full h-full  rounded-3xl flex items-center justify-between px-10">
-				<div className="flex flex-col items-start opacity-50 max-w-[50%] lg:max-w-fit">
+				<div className="flex flex-col items-start opacity-70 max-w-[50%] lg:max-w-fit">
 					<p>
 						© 2024 Johan Romero.{" "}
 						<span className="xs:hidden">Todos los derechos reservados</span>
@@ -19,7 +19,7 @@ const Footer = () => {
 				</div>
 				<div className="flex flex-col-reverse gap-3 items-end">
 					<p
-						className="opacity-50 hidden lg:flex"
+						className="opacity-70 hidden lg:flex"
 						title="Ultima actualización"
 						alt="Ultima actualización">
 						Ultima actualización: 31 enero de 2024
@@ -40,7 +40,6 @@ const Footer = () => {
 							alt="Ir a LinkedIn">
 							<FaLinkedinIn />
 						</a>
-						
 					</div>
 				</div>
 			</div>

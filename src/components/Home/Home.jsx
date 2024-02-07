@@ -21,7 +21,7 @@ const Home = () => {
 				<main className="w-full flex flex-col gap-10 items-center max-w-5xl px-5 xl:max-w-7xl pt-[4.5rem] st-current dark:bg-dusky">
 					<section className="w-full grid auto-rows-[192px] grid-cols-6 gap-4">
 						{/* BLOQUE IMAGEN */}
-						<div className="shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
+						<div className=" shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
 							<img
 								className="absolute h-full object-contain right-4 top-6 scale-x-[1.1]  scale-105 overflow-hidden"
 								src={face}
@@ -29,7 +29,7 @@ const Home = () => {
 								alt="Imagen usuario"
 							/>
 							<div className="absolute bg-gradient-to-t from-dusky-alt  to-transparent top-0 left-0 bottom-0 right-0 z-[2]"></div>
-							<div className="w-full flex flex-col z-[2] absolute left-0 bottom-0 leading-4 p-5 text-moonlit">
+							<div className="animate__animated animate__slideInLeft w-full flex flex-col z-[2] absolute left-0 bottom-0 leading-4 p-5 text-moonlit">
 								<h1
 									className="text-3xl font-bold leading-7"
 									title="Portfolio de desarrollador front-end Johan Romero"
@@ -76,7 +76,7 @@ const Home = () => {
 						</div>
 
 						{/* BLOQUE SOBRE MI */}
-						<div className="shadow-md row-span-1 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden  border-transparent gap-2 p-6 dark:bg-raisin-black xl:col-span-2 lg:p-10">
+						<div className=" shadow-md row-span-1 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden  border-transparent gap-2 p-6 dark:bg-raisin-black xl:col-span-2 lg:p-10">
 							<p
 								className="text-2xl font-semibold pt-1"
 								title="Titulo sobre mi"
