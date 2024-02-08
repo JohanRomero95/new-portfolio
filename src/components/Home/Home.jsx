@@ -23,7 +23,7 @@ const Home = () => {
 						{/* BLOQUE IMAGEN */}
 						<div className=" shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
 							<img
-								className="absolute h-full object-contain right-4 top-6 scale-x-[1.1]  scale-105 overflow-hidden"
+								className="absolute h-full object-contain right-4 top-5 xxs:scale-125 scale-x-[1.1]  scale-105 overflow-hidden"
 								src={face}
 								title="Imagen usuario"
 								alt="Imagen usuario"
@@ -114,7 +114,7 @@ const Home = () => {
 						<div className="shadow-md row-span-1 col-span-3 rounded-3xl bg-white dark:bg-raisin-black overflow-hidden border-2 border-transparent xl:col-span-1 flex items-center justify-center relative">
 							<img
 								src={ubication}
-								className="absolute w-full object-center scale-[1.3] z-[1] xs:scale-[1.9] right-2"
+								className="absolute w-full object-center scale-[1.2] z-[1] xs:scale-[1.8] right-2"
 								// sm:-top-64
 								title="Ubicación donde radica el Desarrollador"
 								alt="El desarrollador esta ubicado en Santiago, Chile"

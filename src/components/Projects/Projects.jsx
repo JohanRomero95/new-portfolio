@@ -75,14 +75,14 @@ const ProjectsComponent = () => {
 							{project.type}
 						</h1>
 					</div>
-					<div className="flex gap-5 xs:gap-2">
+					<div className="flex gap-2 lg:gap-5 ">
 						{project.url_site ? (
 							<a
 								href={project.url_site}
 								target="_blank"
 								title={`Ir a ${project.name}`}
 								alt={`Ir a ${project.name}`}
-								className="shadow-md flex items-center justify-center gap-2 px-4 py-2 bg-[#0568fe] text-white rounded-xl text-sm z-[1] hover:scale-[1.1] transition-all">
+								className="shadow-md  flex items-center justify-center gap-2 px-4 py-2 bg-[#0568fe] text-white rounded-xl text-sm z-[1] hover:scale-[1.1] transition-all">
 								Visualizar
 								<span>
 									<FaExternalLinkAlt className="opacity-70" />
@@ -91,18 +91,21 @@ const ProjectsComponent = () => {
 						) : (
 							""
 						)}
-
-						<a
-							href={project.url_code}
-							target="_blank"
-							title={`Ir al código de ${project.name}`}
-							alt={`Ir al código de ${project.name}`}
-							className="shadow-md flex items-center justify-center gap-2 px-4 py-2 bg-[#0568fe] text-white rounded-xl text-sm z-[1] hover:scale-[1.1] transition-all">
-							Código
-							<span>
-								<FaCode className="text-lg opacity-70" />
-							</span>
-						</a>
+						{project.url_code ? (
+							<a
+								href={project.url_code}
+								target="_blank"
+								title={`Ir al código de ${project.name}`}
+								alt={`Ir al código de ${project.name}`}
+								className="shadow-md flex items-center justify-center gap-2 px-4 py-2 bg-[#0568fe] text-white rounded-xl text-sm z-[1] hover:scale-[1.1] transition-all">
+								Código
+								<span>
+									<FaCode className="text-lg opacity-70" />
+								</span>
+							</a>
+						) : (
+							""
+						)}
 					</div>
 					<img
 						src={project.background_url}

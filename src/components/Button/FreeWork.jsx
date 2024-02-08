@@ -19,8 +19,7 @@ const Button = () => {
 			rel="noopener noreferrer"
 			className={`xs:hidden shadow-md flex items-center font-medium px-3 py-2 rounded-lg text-white gap-2 hover:scale-[1.1] transition-transform duration-300 ${
 				disponible ? "bg-green-800" : "bg-red-600"
-			}`}
-			onClick={""}>
+			}`}>
 			{disponible ? (
 				<>
 					<FaCheck /> Disponible para trabajar
