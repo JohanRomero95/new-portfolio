@@ -75,7 +75,7 @@ const Header = () => {
 					</button>
 
 					<a
-						href="https://drive.google.com/file/d/18ZJn38S1NI0JVQBjF1dPPgtBXeA00Qyr/view?usp=drive_link"
+						href="https://drive.google.com/file/d/1k2C7ZTtb-EbeJRsKjL4dLYIT9-yoc8R5/view?usp=drive_link"
 						target="_blank"
 						title="CV del Desarrollador"
 						alt="Botón para descargar o visualizar CV del Desarrollador"
