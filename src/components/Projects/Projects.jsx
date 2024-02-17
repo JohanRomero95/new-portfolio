@@ -110,6 +110,7 @@ const ProjectsComponent = () => {
 					<img
 						src={project.background_url}
 						alt={project.name}
+						title={project.name}
 						className={`hover:scale-110 absolute w-full h-full object-cover left-0 top-0 z-[0] transition-all duration-300 false dark:opacity-80 `}
 					/>
 				</SwiperSlide>

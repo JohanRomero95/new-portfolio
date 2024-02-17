@@ -30,17 +30,17 @@ const Home = () => {
 							/>
 							<div className="absolute bg-gradient-to-t from-dusky-alt  to-transparent top-0 left-0 bottom-0 right-0 z-[2]"></div>
 							<div className="animate__animated animate__slideInLeft w-full flex flex-col z-[2] absolute left-0 bottom-0 leading-4 p-5 text-moonlit">
-								<h1
+								<h3
 									className="text-3xl font-bold leading-7"
 									title="Portfolio de desarrollador front-end Johan Romero"
 									alt="Nombre programador front-end">
 									Johan Romero <span className="xxs:hidden">Mendez</span>
-								</h1>
+								</h3>
 								<h1
 									className="text-lg font-semibold leading-9"
 									title="Cargo del desarrollador "
 									alt="Especialidad desarrollador front-end">
-									Front-end Developer
+									Desarrollador Front-end
 								</h1>
 								<div className="flex flex-wrap items-center gap-3 mt-1  lg:gap-4">
 									<a
