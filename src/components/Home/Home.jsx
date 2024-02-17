@@ -19,7 +19,7 @@ const Home = () => {
 
 	useEffect(() => {
 		const img = new Image();
-		img.src = "../../../public/images/me.webp";
+		img.src = "/public/images/me.webp";
 		img.onload = () => {
 			setImageLoaded(true);
 			setImage(img.src);
