@@ -1,9 +1,11 @@
+import React from "react";
+import { Helmet } from "react-helmet";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
-import ubication from "../../../public/images/santiago.webp";
-// import face from "../../../public/images/me.webp";
-import Avatar from "/public/images/memoji.webp";
+import ubication from "/images/santiago.webp";
+import face from "/images/me.webp";
+import Avatar from "/images/memoji.webp";
 import Footer from "../Footer/Footer";
 import Nav from "../Navbar/Nav";
 import Technologies from "../Technologies/Technologies";
@@ -11,23 +13,13 @@ import Header from "../Header/Header";
 import FreeWork from "../Button/FreeWork";
 import ProjectsComponent from "../Projects/Projects";
 import "animate.css";
-import { useEffect, useState } from "react";
 
 const Home = () => {
-	const [imageLoaded, setImageLoaded] = useState(false);
-	const [image, setImage] = useState(null);
-
-	useEffect(() => {
-		const img = new Image();
-		img.src = "/public/images/me.webp";
-		img.onload = () => {
-			setImageLoaded(true);
-			setImage(img.src);
-		};
-	}, []);
-
 	return (
 		<div className="font-outfit w-full bg-moonlit select-none text-midnight flex flex-col items-center subpixel-antialiased dark:bg-dusky dark:text-noon scroll-smooth gap-5 lg:gap-10">
+			<Helmet>
+				<link rel="preload" as="image" href={face} />
+			</Helmet>
 			<div className="w-full flex items-center justify-center mt-16 lg:mt-[3rem] fixed z-20 "></div>
 			<div className="bg-moonlit dark:bg-dusky w-full flex min-h-screen flex-col items-center justify-between mx-80 my-4 ">
 				<Nav />
@@ -35,16 +27,12 @@ const Home = () => {
 					<section className="w-full grid auto-rows-[192px] grid-cols-6 gap-4">
 						{/* BLOQUE IMAGEN */}
 						<div className=" shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
-							<>
-								{imageLoaded && (
-									<img
-										className="absolute h-full object-contain right-4 top-5 xxs:scale-125 scale-x-[1.1]  scale-105 overflow-hidden"
-										src={image}
-										title="Imagen usuario"
-										alt="Imagen usuario"
-									/>
-								)}
-							</>
+							<img
+								className="absolute h-full object-contain right-4 top-5 xxs:scale-125 scale-x-[1.1]  scale-105 overflow-hidden"
+								src={face}
+								title="Imagen usuario"
+								alt="Imagen usuario"
+							/>
 							<div className="absolute bg-gradient-to-t from-dusky-alt  to-transparent top-0 left-0 bottom-0 right-0 z-[2]"></div>
 							<div className="animate__animated animate__slideInLeft w-full flex flex-col z-[2] absolute left-0 bottom-0 leading-4 p-5 text-moonlit">
 								<h3
