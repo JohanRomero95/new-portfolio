@@ -22,7 +22,7 @@ const Footer = () => {
 						className="opacity-70 hidden lg:flex"
 						title="Ultima actualización"
 						alt="Ultima actualización">
-						Ultima actualización: 31 enero de 2024
+						Ultima actualización: 08 marzo de 2024
 					</p>
 					<div className="flex items-center gap-2 text-xl ">
 						<a

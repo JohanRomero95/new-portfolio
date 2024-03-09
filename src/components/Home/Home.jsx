@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet";
+// import { Helmet } from "react-helmet";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
@@ -17,19 +17,19 @@ import "animate.css";
 const Home = () => {
 	return (
 		<div className="font-outfit w-full bg-moonlit select-none text-midnight flex flex-col items-center subpixel-antialiased dark:bg-dusky dark:text-noon scroll-smooth gap-5 lg:gap-10">
-			<Helmet>
+			{/* <Helmet>
 				<link rel="preload" as="image" href={face} />
-			</Helmet>
+      </Helmet> */}
 			<div className="w-full flex items-center justify-center mt-16 lg:mt-[3rem] fixed z-20 "></div>
 			<div className="bg-moonlit dark:bg-dusky w-full flex min-h-screen flex-col items-center justify-between mx-80 my-4 ">
 				<Nav />
 				<main className="w-full flex flex-col gap-10 items-center max-w-5xl px-5 xl:max-w-7xl pt-[4.5rem] st-current dark:bg-dusky">
 					<section className="w-full grid auto-rows-[192px] grid-cols-6 gap-4">
-						{/* BLOQUE IMAGEN */}
 						<div className=" shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
 							<img
 								className="absolute h-full object-contain right-4 top-5 xxs:scale-125 scale-x-[1.1]  scale-105 overflow-hidden"
 								src={face}
+								loading="lazy"
 								title="Imagen usuario"
 								alt="Imagen usuario"
 							/>
@@ -73,14 +73,11 @@ const Home = () => {
 										className="shadow-md flex items-center font-medium bg-moonlit px-3 py-2 rounded-lg text-dusky gap-2 hover:scale-[1.1] transition-transform duration-300">
 										<MdOutgoingMail />
 										<p className="xxs:hidden">Email</p>
-										{/* JohanARM95@gmail.com */}
 									</a>
 									<FreeWork />
 								</div>
 							</div>
 						</div>
-
-						{/* BLOQUE SOBRE MI */}
 						<div className=" shadow-md row-span-1 col-span-6 rounded-3xl bg-white relative flex flex-col overflow-hidden  border-transparent gap-2 p-6 dark:bg-raisin-black xl:col-span-2 lg:p-10">
 							<p
 								className="text-2xl font-semibold pt-1"
@@ -96,36 +93,32 @@ const Home = () => {
 								aplicaciones front-end
 							</h2>
 						</div>
-
-						{/* BLOQUE TIEMPO EXPERIENCIA */}
 						<div className="shadow-md row-span-1 col-span-3 rounded-3xl bg-white relative flex flex-col overflow-hidden border-2 border-transparent gap-2 items-center justify-center dark:bg-raisin-black xl:col-span-1">
 							<p
 								className="text-7xl z-[1] font-bold flex items-center gap-1"
 								title="Tiempo de experiencia"
 								alt="Tiempo de experiencia">
 								<span>+</span>
-								<span>1</span>
+								<span>11</span>
 							</p>
 							<div className="opacity-10 absolute text-[6rem] top-[6.1rem] -right-[5px] sm:scale-150 sm:top-[4.7rem] sm:right-4">
-								{/* md:left-[19.4rem] md:scale-x-125 md:scale-y-125 md:top-5 */}
 								<GiProgression />
 							</div>
 							<p className="text-sm font-semibold max-w-fit opacity-70 text-center">
 								Meses de experiencia
 							</p>
 						</div>
-
-						{/* BLOQUE UBICACIÓN MAPA */}
 						<div className="shadow-md row-span-1 col-span-3 rounded-3xl bg-white dark:bg-raisin-black overflow-hidden border-2 border-transparent xl:col-span-1 flex items-center justify-center relative">
 							<img
+								loading="lazy"
 								src={ubication}
 								className="absolute w-full object-center scale-[1.2] z-[1] xs:scale-[1.8] right-2"
-								// sm:-top-64
 								title="Ubicación donde radica el Desarrollador"
 								alt="El desarrollador esta ubicado en Santiago, Chile"
 							/>
 							<img
 								src={Avatar}
+								loading="lazy"
 								className="absolute z-[2] w-14"
 								title="Memoji Desarrollador"
 								alt="Memoji del desarrollador"
@@ -147,7 +140,6 @@ const Home = () => {
 							</div>
 						</div>
 					</section>
-					{/* <Header title="Experiencias" description="" /> */}
 					<Header title="Proyectos" description="Algunos proyectos en los que he trabajado." />
 					<ProjectsComponent />
 					<Header

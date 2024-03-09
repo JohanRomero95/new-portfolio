@@ -1,15 +1,12 @@
 import React from "react";
 import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
 import "swiper/css";
-// import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import "swiper/css/thumbs";
 import "swiper/css/effect-coverflow";
 import "swiper/css/mousewheel";
-// import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
-// import "swiper/css/grid";
 import { Projects } from "../../utils/Projects";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { A11y, Mousewheel, Navigation } from "swiper/modules";
@@ -65,8 +62,7 @@ const ProjectsComponent = () => {
 									? "invert hue-rotate-[165deg] w-[14rem] -mt-[5px] mb-[3px] ml-6 h-[42px]"
 									: ""
 							}
-              ${project.name === "Pokedex" ? "  mb-2 h-10 -mt-2" : ""}`}
-							// w-[12.5rem]
+              ${project.name === "Pokedex" ? "  mb-0 h-[48px] w-[235px] -mt-2" : ""}`}
 						/>
 						<h1
 							className="text-center text-moonlit leading-5 mt-2 z-[1]"
