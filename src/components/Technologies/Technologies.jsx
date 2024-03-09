@@ -12,6 +12,7 @@ const Technologies = () => {
 							return (
 								<li key={tecnologias.id} className="mx-8">
 									<img
+										loading="lazy"
 										className={`cursor-pointer w-[4.5em] h-14 grayscale object-fill hover:grayscale-0 `}
 										src={tecnologias.icon}
 										alt={tecnologias.name}
@@ -28,6 +29,7 @@ const Technologies = () => {
 							return (
 								<li key={tecnologias.id} className="mx-8">
 									<img
+										loading="lazy"
 										className={`cursor-pointer w-[4.5em]  h-14 grayscale object-fill hover:grayscale-0`}
 										src={tecnologias.icon}
 										alt={tecnologias.name}
