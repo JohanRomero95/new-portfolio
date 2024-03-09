@@ -60,7 +60,7 @@ const Header = () => {
 				</div>
 				<div className="flex items-center gap-4 ">
 					<button className="text-xl" title="Cambiar idioma" alt="Cambiar idioma">
-						<MdTranslate />
+						{/* <MdTranslate /> */}
 					</button>
 					<button
 						className={`text-2xl transition-all ${

@@ -1,5 +1,4 @@
 import React from "react";
-// import { Helmet } from "react-helmet";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { MdOutgoingMail } from "react-icons/md";
 import { GiProgression } from "react-icons/gi";
@@ -17,9 +16,6 @@ import "animate.css";
 const Home = () => {
 	return (
 		<div className="font-outfit w-full bg-moonlit select-none text-midnight flex flex-col items-center subpixel-antialiased dark:bg-dusky dark:text-noon scroll-smooth gap-5 lg:gap-10">
-			{/* <Helmet>
-				<link rel="preload" as="image" href={face} />
-      </Helmet> */}
 			<div className="w-full flex items-center justify-center mt-16 lg:mt-[3rem] fixed z-20 "></div>
 			<div className="bg-moonlit dark:bg-dusky w-full flex min-h-screen flex-col items-center justify-between mx-80 my-4 ">
 				<Nav />

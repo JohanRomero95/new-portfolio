@@ -1,20 +1,14 @@
 import React from "react";
 import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
 import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
-import "swiper/css/thumbs";
-import "swiper/css/effect-coverflow";
-import "swiper/css/mousewheel";
-import "swiper/css/effect-fade";
 import { Projects } from "../../utils/Projects";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Mousewheel, Navigation } from "swiper/modules";
+import { A11y, Mousewheel } from "swiper/modules";
 
 const ProjectsComponent = () => {
 	return (
 		<Swiper
-			modules={[A11y, Navigation, Mousewheel]}
+			modules={[A11y, Mousewheel]}
 			className="breakpoint w-full min-h-[545px] -mb-8 grid auto-rows-[500px] grid-cols-8 gap-4 "
 			loop={true}
 			centeredSlides={false}
@@ -50,6 +44,7 @@ const ProjectsComponent = () => {
 					className=" shadow-xl hover:shadow-gray-400 dark:hover:shadow-gray-900 row-span-1 col-span-8 lg:row-span-2 lg:col-span-2 bg-white dark:bg-raisin-black rounded-3xl overflow-hidden relative flex flex-col py-14 items-center justify-between">
 					<div className="flex flex-col items-center ">
 						<img
+							loading="lazy"
 							src={project.company_logo}
 							alt={project.name}
 							title={project.name}
@@ -62,7 +57,7 @@ const ProjectsComponent = () => {
 									? "invert hue-rotate-[165deg] w-[14rem] -mt-[5px] mb-[3px] ml-6 h-[42px]"
 									: ""
 							}
-              ${project.name === "Pokedex" ? "  mb-0 h-[48px] w-[235px] -mt-2" : ""}`}
+              ${project.name === "Pokedex" ? "  mb-2 scale-105 -mt-2" : ""}`}
 						/>
 						<h1
 							className="text-center text-moonlit leading-5 mt-2 z-[1]"
@@ -104,6 +99,7 @@ const ProjectsComponent = () => {
 						)}
 					</div>
 					<img
+						loading="lazy"
 						src={project.background_url}
 						alt={project.name}
 						title={project.name}

@@ -76,15 +76,4 @@ export const Projects = [
 		url_code: "https://github.com/JohanRomero95/shoes-ecommerce",
 		background_url: trendElite,
 	},
-
-	// {
-	// 	id: 4,
-	// 	company_logo: huddleLogo,
-	// 	name: "Huddle",
-	// 	position_name: "Front-end Developer",
-	// 	dates: "",
-	// 	url_site: "https://hunddlepage.netlify.app/",
-	// 	url_code: "",
-	// 	background_url: huddle,
-	// }
 ];
