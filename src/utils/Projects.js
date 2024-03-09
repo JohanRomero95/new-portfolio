@@ -7,6 +7,16 @@ import trendEliteLogo from "../../public/images/trendElite Logo.webp";
 export const Projects = [
 	{
 		id: 0,
+		company_logo: trendEliteLogo,
+		name: "trendElite",
+		type: "E-commerce",
+		dates: "",
+		url_site: "https://trendelite.vercel.app",
+		url_code: "https://github.com/JohanRomero95/shoes-ecommerce",
+		background_url: trendElite,
+	},
+	{
+		id: 1,
 		company_logo: huddleLogo,
 		name: "Huddle",
 		type: "Landing Page",
@@ -26,16 +36,6 @@ export const Projects = [
 	// url_code: "",
 	// background_url: nolab_bg,
 	// },
-	{
-		id: 2,
-		company_logo: trendEliteLogo,
-		name: "trendElite",
-		type: "E-commerce",
-		dates: "",
-		url_site: "https://trendelite.vercel.app",
-		url_code: "https://github.com/JohanRomero95/shoes-ecommerce",
-		background_url: trendElite,
-	},
 	{
 		id: 3,
 		company_logo: pokedexLogo,
@@ -57,6 +57,16 @@ export const Projects = [
 		background_url: trendElite,
 	},
 	{
+		id: 2,
+		company_logo: huddleLogo,
+		name: "Huddle",
+		type: "Landing Page",
+		dates: "",
+		url_site: "https://hunddlepage.netlify.app/",
+		url_code: "",
+		background_url: huddle,
+	},
+	{
 		id: 5,
 		company_logo: pokedexLogo,
 		name: "Pokedex",
@@ -65,15 +75,5 @@ export const Projects = [
 		url_site: "https://pokedexhub.netlify.app/",
 		url_code: "https://github.com/JohanRomero95/pokemon-new",
 		background_url: pokedex,
-	},
-	{
-		id: 6,
-		company_logo: trendEliteLogo,
-		name: "trendElite",
-		type: "E-commerce",
-		dates: "",
-		url_site: "#",
-		url_code: "https://github.com/JohanRomero95/shoes-ecommerce",
-		background_url: trendElite,
 	},
 ];
