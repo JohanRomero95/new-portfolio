@@ -52,7 +52,7 @@ const ProjectsComponent = () => {
 									? "invert hue-rotate-[165deg] w-[14rem] -mt-[5px] mb-[3px] ml-6 h-[42px]"
 									: ""
 							}
-              ${project.name === "Pokedex" ? "  mb-2 -mt-2" : ""}`}
+              ${project.name === "Pokedex" ? "w-[250px] h-[48px] mb-2 -mt-2" : ""}`}
 						/>
 						<h1
 							className="text-center text-moonlit leading-5 mt-2 z-[1]"
