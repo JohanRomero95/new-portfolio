@@ -55,7 +55,7 @@ const Header = () => {
 						title="Logotipo del desarrollador"
 						alt="Logo del desarrollador y botón subir a top pagina"
 						className="text-moonlit text-md font-semibold dark:text-dusky">
-						JRHola
+						JR
 					</button>
 				</div>
 				<div className="flex items-center gap-4 ">
