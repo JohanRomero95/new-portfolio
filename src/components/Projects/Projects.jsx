@@ -43,7 +43,7 @@ const ProjectsComponent = () => {
 							src={project.company_logo}
 							alt={project.name}
 							title={project.name}
-							className={`w-48 h-10 z-[1]  ${
+							className={`z-[1]  ${
 								project.name === "Huddle"
 									? "invert hue-rotate-180 w-[11rem] mb-3 h-[28px]"
 									: ""
@@ -52,7 +52,7 @@ const ProjectsComponent = () => {
 									? "invert hue-rotate-[165deg] w-[14rem] -mt-[5px] mb-[3px] ml-6 h-[42px]"
 									: ""
 							}
-              ${project.name === "Pokedex" ? "w-[250px] h-[48px] mb-2 -mt-2" : ""}`}
+              ${project.name === "Pokedex" ? "mb-2 -mt-2 w-[266px] h-[50px]" : ""}`}
 						/>
 						<h1
 							className="text-center text-moonlit leading-5 mt-2 z-[1]"
