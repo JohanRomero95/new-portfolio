@@ -108,7 +108,7 @@ const Home = () => {
 							<img
 								loading="lazy"
 								src={ubication}
-								className="absolute w-full object-center scale-[1.2] z-[1] xs:scale-[1.8] right-2"
+								className="absolute w-full object-cover scale-[1.3] z-[1] xs:scale-[1.8] "
 								title="Ubicación donde radica el Desarrollador"
 								alt="El desarrollador esta ubicado en Santiago, Chile"
 							/>

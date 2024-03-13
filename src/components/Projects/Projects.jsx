@@ -3,19 +3,14 @@ import { FaExternalLinkAlt, FaCode } from "react-icons/fa";
 import "swiper/css";
 import { Projects } from "../../utils/Projects";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Mousewheel } from "swiper/modules";
 
 const ProjectsComponent = () => {
 	return (
 		<Swiper
-			modules={[A11y, Mousewheel]}
 			className="breakpoint w-full min-h-[545px] -mb-8 grid auto-rows-[500px] grid-cols-8 gap-4 "
 			loop={true}
 			centeredSlides={false}
 			grabCursor={true}
-			mousewheel={{
-				invert: false,
-			}}
 			breakpoints={{
 				0: {
 					spaceBetween: 10,
