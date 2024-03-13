@@ -23,7 +23,7 @@ const Home = () => {
 					<section className="w-full grid auto-rows-[192px] grid-cols-6 gap-4">
 						<div className=" shadow-md row-span-2 col-span-6 rounded-3xl bg-blue-200 relative flex flex-col overflow-hidden gap-10 justify-end p-6 dark:bg-raisin-black xl:col-span-4 lg:items-end sm:flex-row  lg:p-10">
 							<img
-								className="absolute h-full object-contain right-4 top-5 xxs:scale-125 scale-x-[1.1]  scale-105 overflow-hidden"
+								className="absolute h-full object-contain right-0 top-3 overflow-hidden xxs:top-14"
 								src={face}
 								loading="lazy"
 								title="Imagen usuario"
@@ -108,7 +108,7 @@ const Home = () => {
 							<img
 								loading="lazy"
 								src={ubication}
-								className="absolute w-full object-cover scale-[1.3] z-[1] xs:scale-[1.8] "
+								className="absolute w-full object-cover scale-[1.25] z-[1] xs:scale-[1.8] "
 								title="Ubicación donde radica el Desarrollador"
 								alt="El desarrollador esta ubicado en Santiago, Chile"
 							/>
